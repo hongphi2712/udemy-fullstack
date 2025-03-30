@@ -1,0 +1,26 @@
+{
+  "name": "learn-nodejs",
+  "version": "1.0.0",
+  "description": "Phi ngu",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongphi2712/udemy-fullstack.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Phi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongphi2712/udemy-fullstack/issues"
+  },
+  "homepage": "https://github.com/hongphi2712/udemy-fullstack#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
