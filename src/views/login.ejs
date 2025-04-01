@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .tagline {
+            font-style: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            background-color: #ff1744;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #d50000;
+        }
+
+        .links {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .links a {
+            color: #ff1744;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <p class="tagline">Đăng nhập</p>
+        <input type="text" placeholder="Tên đăng nhập">
+        <input type="password" placeholder="Mật khẩu">
+        <button class="login-button">Login</button>
+        <div class="links">
+            <p>Chưa có tài khoản? <a href="#" id="signup-link">Đăng ký</a></p>
+            <p>Quên mật khẩu? <a href="#">Đặt lại mật khẩu</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Lấy phần tử link đăng ký
+        const signupLink = document.getElementById('signup-link');
+
+        // Thêm sự kiện click vào link Đăng ký
+        signupLink.addEventListener('click', function(event) {
+            event.preventDefault();  // Ngăn việc reload trang
+
+            // Thay đổi nội dung đăng nhập thành đăng ký (hoặc bạn có thể thay đổi toàn bộ nội dung của form)
+            document.querySelector('.tagline').textContent = 'Đăng ký tài khoản';
+            document.querySelector('.login-button').textContent = 'Đăng ký';
+            document.querySelector('.links').innerHTML = `
+                <p>Đã có tài khoản? <a href="#">Đăng nhập</a></p>
+            `;
+        });
+    </script>
+</body>
+</html>

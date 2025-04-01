@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>x</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" attr>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" attr>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" attr>
+  </head>
+  <body>
+    <div class="wrapper bg-white__home">
+      <div class="header d-flex align-items-center">
+        <div class="container">
+          <ul class="header__menu d-flex m-0 align-items-center">
+            <div class="humburger d-xl-none"><i class="fa fa-bars"></i></div>
+            <li class="header__logo"><a href="http://localhost:8081/home">Inksprise</a></li>
+            <li class="user-member-mb d-xl-none" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-user"></i></li>
+            <li class="header__types"><a href="http://localhost:8081/category"><i class="fa fa-navicon"></i>  Thể Loại</a>
+              <ul class="list-dropMenu">
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+              </ul>
+            </li>
+            <li class="header__sort"><a href="#"><i class="fa fa-sort"></i>  Sắp Xếp</a>
+              <ul class="list-dropMenu">
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a><a href="">Kiếm Hiệp</a><a href="">Kiếm Hiệp</a></li>
+              </ul>
+            </li>
+            <li class="header__search">
+              <form action="#" method="method">
+                <input type="text" placeholder="Tìm truyện, tác giả..."><span class="header__search-button"><a href="#"><i class="fa fa-search"></i></a></span>
+              </form>
+            </li>
+            <li class="header__member">
+              <a href="http://localhost:8081/login"><i class="fa fa-user"></i>Đăng nhập</a>
+          </li>
+          
+          </ul>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <div class="button-close">
+          <p class="d-flex"><span>Đóng</span><i class="fa fa-times"></i></p>
+        </div>
+        <ul class="list">
+          <li class="item-search">
+            <form class="form-inline" action="#" method="method">
+              <input class="form-control" type="text" placeholder="Tìm truyện, tác giả..." id="customInput">
+              <button class="btn btn-primary">Tìm kiếm</button>
+            </form>
+          </li>
+          <li class="item-nav">
+            <div class="nav-content row">
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item-nav">
+            <div class="nav-content row">
+              <div class="col-12"><a class="list-group-item list-group-item-action active"> Sắp sếp<i class="fa fa-angle-down"></i></a></div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pr-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="list-group">
+                  <p><i class="fa fa-tags"></i><a class="item--bg-gray" href="#">Tiên hiệp</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white text-center" id="exampleModalLabel">Thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Email:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Mật khẩu:</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Password...">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label" for="message-text">Ghi nhớ mật khẩu</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng nhập</button>
+                <p class="mt-3"><a class="forgot-pass" href="#">Chưa có tài khoản ? Đăng ký</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade bd-example-modal-sm" id="modalRes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white">Đăng ký thành viên</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Email (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="recipient-name">Tên hiển thị (bắt buộc):</label>
+                  <input class="form-control form-control-lg" type="text" id="recipient-name" placeholder="Tên hiển thị...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="message-text">Nhập lại mật khẩu (ít nhất 6 kí tự):</label>
+                  <input class="form-control form-control-lg" type="password" id="recipient-name" placeholder="******">
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option1" name="inlineRadioOptions" id="inlineRadio1">
+                  <label class="form-check-label" for="message-text">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="option2" name="inlineRadioOptions" id="inlineRadio2">
+                  <label class="form-check-label" for="message-text">Nữ</label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button">Đăng ký tài khoản</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home bg-white pt-3">
+        <div class="container">
+                <div class="row justify-content-between row_story">
+                  <div class="col-12 col-md-6">
+                    <h3 class="title">TRUYỆN HOT</h3>
+                  </div>
+                  <div class="col-12 col-md-2">
+                    <div class="form-group">
+                      <select class="form-control" id="form-control">
+                        <option value="Tất cả">Tất cả</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+          <div class="slider-home story-list">
+            <div class="owl-carousel owl-theme">
+              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+              </div>
+              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+              </div>
+              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+              </div>
+              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+              </div>
+            </div><div class="owl-theme">
+<div class="owl-controls">
+<div class="custom-nav owl-nav"></div>
+</div>
+</div>
+          </div>
+        </div>
+        <div class="story-update pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                      <div class="row justify-content-between row_story">
+                        <div class="col-12 col-md-6">
+                          <h3 class="title">TRUYỆN MỚI CẬP NHẬT</h3>
+                        </div>
+                        <div class="col-12 col-md-2">
+                          <div class="form-group">
+                            <select class="form-control" id="form-control">
+                              <option value="Tất cả">Tất cả</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                <ul class="story-update__list row mb-0 ml-lg-0">
+                  <li class="story__update-img pr-3"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg"></li>
+                  <li class="story-update__item">
+                    <p class="font-weight-bold"><a href="#" style="color:black">Diễn tình xuyên vào kịch khổ tình</a></p>
+                    <p><i class="fa fa-user"></i><span>Thiên tầm thổ đậu</span></p>
+                  </li>
+                  <li class="story-update__item">
+                    <p class="font-weight-regular">Chương 51</p>
+                    <p class="font-weight-light w-100"><i>Mới đây</i></p>
+                  </li>
+                </ul>
+                      <div class="story-list">
+                        <div class="container">
+                          <div class="row justify-content-between row_story">
+                            <div class="col-12 col-md-6">
+                              <h3 class="title">TRUYỆN FULL</h3>
+                            </div>
+                            <div class="col-12 col-md-2">
+                              <div class="form-group">
+                                <select class="form-control" id="form-control">
+                                  <option value="Tất cả">Tất cả</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                              <div class="story-item"><img class="shadow" src="./images/product1.jpg">
+                                <h3 class="title-product"><a href="#">Thần Đạo Đan Tôn</a></h3>
+                                <button class="btn btn-primary"><a href="">Chương 2443</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                      <div class="types-story">
+                        <h3 class="title">THỂ LOẠI TRUYỆN</h3>
+                        <ul class="types-story__list row">
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                          <li class="types-story__item col-6 col-md-6"><a class="types-story__link font-weight-bold color-black" href="#">Tiên hiệp</a></li>
+                        </ul>
+                      </div>
+                <div class="story-read">
+                        <div class="story-read">
+                          <h3 class="title">TRUYỆN ĐỌC NHIỀU</h3>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="see-more text-center mt-3 mb-3">
+                            <button class="btn btn-primary" id="btn-primary"><a href="#">Xem Thêm</a></button>
+                          </div>
+                        </div>
+                </div>
+                <div class="story-new">
+                        <div class="story-read">
+                          <h3 class="title">TRUYỆN MỚI ĐĂNG</h3>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--red">1</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--blue">2</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number circle--green">3</span><a class="img-list"><img src="https://webtruyenfree.com/wp-content/uploads/2019/12/gio-am-khong-bang-anh-tham-tinh-1.jpg" alt="alt"></a>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">4</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">5</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="story-read__list d-flex"><span class="story-read__list-number">6</span>
+                            <div class="story-read__list-content pl-3">
+                              <p><a href="#">Mao sơn tróc Qúy nhân</a></p><i class="fa fa-eye"></i><span>71931751</span>
+                            </div>
+                          </div>
+                          <div class="see-more text-center mt-3 mb-3">
+                            <button class="btn btn-primary" id="btn-primary"><a href="#">Xem Thêm</a></button>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>THỂ LOẠI HOT</h2>
+                </div>
+                <ul class="list-footer list1">
+                  <li><a href="#">Đô thị</a></li>
+                  <li><a href="#">Ngôn tình</a></li>
+                  <li><a href="#">Tiên Hiệp</a></li>
+                  <li><a href="#">Hài Hước</a></li>
+                  <li><a href="#">Sủng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>TOP TỪ KHÓA</h2>
+                </div>
+                <ul class="list-footer list2">
+                  <li><a href="#">Trọng Sinh</a><a href="#">Ngôn Tình</a><a href="#">Chọc tức Vợ Yêu</a><a href="#">Truyện Ngược</a></li>
+                  <li><a href="#">Truyện Âm Hưởng</a><a href="#">Truyện 18+</a><a href="#">Truyện Người Lớn</a></li>
+                  <li><a href="#">pham nhan tu tien</a><a href="#">Du Hành</a><a href="#">hồng nhan họa thủy</a></li>
+                  <li><a href="#">truyensex</a><a href="#">yêu em từ cái nhìn đầu tiên</a></li>
+                  <li><a href="#">tam sinh tam thế thập lý đào hoa</a><a href="#">de ba</a><a href="#">dau pha thuong khung</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12">
+              <div class="footer__card">
+                <div class="footer__title">
+                  <h2>LỜI GIỚI THIỆU</h2>
+                </div>
+                <ul class="list-footer list3">
+                  <li>
+                    <p>Truyện nhiều - Đọc truyện online, đọc truyện chữ, truyện hay. Website luôn cập nhật những bộ truyện mới một cách nhanh nhất</p>
+                  </li>
+                  <li>
+                    <p>Tất cả các truyện trên site đều được độc giả sưu tầm từ các nguồn trên mạng , chúng tôi không chịu bất cứ trách nhiệm nào về vấn đề bản quyền tác giả</p>
+                  </li>
+                  <li>
+                    <p>Nếu các bạn đọc truyện nào thấy có nội dung liên quan đến vấn đề chính trị hoặc có nội dung không lành mạnh vui lòng liên hệ truyennhieu.com@gmail.com để chúng tôi xóa bỏ truyện khỏi trang web. Chân thành cảm ơn</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="d-flex">
+        <a class="mr-2" href="index.html"><h5>Trangchu</h5></a>
+        <a class="mr-2" href="category.html"><h5>theloai</h5></a>
+        <a class="mr-2" href="list-chapter.html"><h5>DSchuong</h5></a>
+        <a class="mr-2" href="read-story.html"><h5>doctruyen</h5></a>  
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  </body>
+</html>
